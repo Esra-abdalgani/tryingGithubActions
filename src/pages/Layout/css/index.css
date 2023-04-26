@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header{
+  z-index: 1000;
+}
+
+a{
+  cursor: pointer;
+}
+
+nav a {
+  position: relative;
+}
+nav a.active{
+  color: #D11775;
+
+}
+nav a.active::after{
+  content: " ";
+  margin-top: 0.5rem;
+  position: absolute;
+  background-color: #D11775;
+  width: 8px;
+  height: 8px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35), inset 0px -1px 0.75px rgba(255, 255, 255, 0.5);
+
+}
+
+
+.social-media-icons{
+  position: fixed; 
+  width: 50px; 
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+
+}
+
+.social-icon a{
+  border: 1px solid #D6CECE;
+  background: white;
+  border-radius: 1rem;
+  padding-left: 1.4rem;
+  gap: .5rem;
+  margin-left: -.6rem;
+  font-weight: 500;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  transform-origin: left;
+  transition:  all .3s linear;
+  margin-bottom: .75rem;
+  color: #3d3d49;
+}
+
+
+.icon{
+ width: 18px;
+ height: 15px;
+}
+.social-icon a span{
+  font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+display: none;
+}
+
+.social-icon a:hover{
+  z-index: 1;
+  width: 110px;
+  border: 1px solid #D11775;
+}
+.social-icon a:hover span {
+  color: #D11775;
+  display: block;
+}
+
+.sectionUnderLine{
+  width: 100px;
+  height: 15px;
+  background: linear-gradient(121.58deg, #D11775 13.35%, #806FBA 55.58%, #5073CD 91.31%);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25), inset -5px 5px 7px #E296C4, inset 5px 0px 5px #FFFFFF, inset 0px 5px 5px #FFFFFF;
+  border-radius: 15px;
+}
+
+/* livaat popup sign in / up */
+input[type=checkbox].terms {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+      height: 20px;
+      width: 20px;
+      appearance: none;
+    opacity: .5;
+  }
+  
+   input[type=checkbox]:hover.terms {
+    opacity: 1;
+    box-shadow: 0px 0px 4px #D11775;
+    border: 1px solid  #D11775;
+  
+  
+  }
+  
+  input[type=checkbox]:checked.terms {
+    background: #D11775;
+    box-shadow: 0px 0px 4px #D11775;
+    border-radius: 2px;  
+    opacity: 1;
+  }
+  
+  
+  
+  .p-button.p-component.sign-up ,.sign-up{
+    background: #D11775;
+    border: none;
+    border-radius: 12px;
+    min-width: 100px !important;
+    font-size: 12px;
+    line-height: 15px;
+    box-shadow: 0px 0px 3px #D11775, inset -5px 30px 40px #DB388A, inset 30px 0px 20px #FFFFFF, inset 0px 31px 30px #FFFFFF;
+  }
+  .p-dialog-header-close{
+    display: none;
+  }
+  .p-button.p-component.sign-in ,.sign-in .p-button-label {
+    border:none;
+    background: none;
+    color: #3D3D49;
+    font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Inter';
+  transition:none;
+  border-radius: 0;
+  
+  }
+  
+  
+  .sign-in{
+    box-shadow: none !important;
+  }
+  
+  .oneNumber{
+    background: white;
+    border: none;
+    border-bottom: 2px solid #A5A5A5;
+  border-radius: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 5px;
+    max-width: 24px; 
+    margin-left: .5rem;
+    
+  }
+  .oneNumber:hover , .oneNumber:focus {
+    outline: none;
+    border-bottom: 2px solid #D11775;
+  
+  }
+  .p-dialog-top{
+    margin-top: 3px;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-dialog{
+    box-shadow: none;
+  background: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4), inset 3px 3px 3px rgba(128, 111, 186, 0.5), inset 5px 0px 5px #FFFFFF, inset 0px 5px 5px #FFFFFF, inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+    border: none;
+    }
+  
+  .p-inputgroup{
+    position: relative;
+    display: block;
+    margin-bottom: 1.5rem;
+    max-width: 461px;
+  }
+  
+  .dialogcontent{
+    margin:10px 10px 0;
+  }
+  .dialog-header{
+    display: none;
+  }
+  
+  .p-dialog .p-dialog-content {
+    background: transparent;
+  }
+  .dialogcontent .p-component.p-inputtext ,
+  .p-inputgroup > .p-inputwrapper:last-child > .p-inputtext{
+    background: transparent;
+      border: none;
+      border-bottom: 2px solid #A5A5A5;
+      border-top-right-radius: 0px ;
+      border-bottom-right-radius: 0px ;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      min-width: 300px;
+      padding: 5px;
+      padding-left: 30px;
+  }
+  
+  .dialogcontent .p-component.p-inputtext:hover ,
+  .p-inputgroup > .p-inputwrapper:last-child > .p-inputtext:hover {
+    border-bottom: 2px solid #D11775;
+    
+  }
+  .pi.pi-user , .pi.pi-envelope,
+  .pi.pi-unlock,.pi.pi-unlock{
+    position: absolute;
+    left: 5px;
+    bottom: 9px;
+    z-index: 99;
+   
+  }
+  .p-inputgroup:hover .p-inputtext::placeholder ,
+  .p-inputgroup:hover .pi.pi-user , .p-inputgroup:hover .pi.pi-envelope,
+  .p-inputgroup:hover .pi.pi-unlock, .p-inputgroup:hover .pi.pi-unlock{
+    color: #D11775;
+  
+  }
+  .dialogcontent .p-component.p-inputtext:focus{
+    box-shadow: none;
+  }
+  
+  .errorM  {
+    color: red;
+    margin-top: -1.2rem;
+    margin-bottom: .6rem;
+    font-size: 11px;
+  }
+  .redBorder input[type=checkbox].terms ,  .redBorder label{
+    margin-bottom: 1rem;
+  }
+  .dialogcontent .p-component.p-inputtext.redBorder  ,
+  .p-inputgroup > .p-inputwrapper:last-child > .p-inputtext.redBorder,
+  .p-password.p-component.p-inputwrapper.redBorder 
+  .p-inputtext.p-component.p-password-input {
+    border-bottom: 2px solid red !important;
+  }
+  
+  
+  input.interested{
+    background: #F2F0F0;
+    border: 1px solid #7B8A9A;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+      cursor: pointer;
+      height: 20px;
+      width: 20px;
+    display: block;
+    margin: 7px;
+    margin-left: auto;
+      -webkit-appearance: none;
+    opacity: .5;  
+  }
+  
+  
+  input[type=checkbox]:checked.interested {
+    box-shadow: 0px 0px 4px #D11775;
+    border: 5px solid  #D11775;
+    opacity: 1;
+  }
+  
+  .interestedCheck > input + label{ 
+    mix-blend-mode: luminosity;
+  
+  } 
+  
+  .interestedCheck:has(input:checked){ 
+    box-shadow: 0px 0px 15px #D11775;
+  } 
+  
+   input[type=checkbox]:checked.interested + label  {
+    mix-blend-mode: normal;
+  
+  }
+/* Footer */
+
+.footer-section{
+    background: linear-gradient(100.37deg, rgba(209, 23, 117, 0.603) 4.67%, rgba(132, 115, 188, 0.9) 99.56%);
+    border-radius: 150px 0px 0px 0px;
+  }  

@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.logos-link a {
+  background-color: #3d3d49;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+}
+
+
+.scroll-up-button{
+position: fixed;  
+right: 0;
+bottom:0;
+cursor: pointer;
+}
+
+.home{
+background-image: url('../../../assets/starsbg.png');
+background-repeat: no-repeat;
+background-position: top;
+background-size: cover;
+}
+
+.underlineTab{
+background: linear-gradient(121.58deg, #D11775 13.35%, #806FBA 55.58%, #5073CD 91.31%);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25), inset -5px 5px 7px #E296C4, inset 5px 0px 5px #FFFFFF, inset 0px 5px 5px #FFFFFF;
+}
+
+/*livaat platform */
+
+.tab-button{
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #3D3D49;
+}
+.tab-button.active{
+ 
+  color: #D11775;
+}
+
+.tab-content{
+display: none;
+}
+.tab-content.active{
+display: block;
+
+
+}
+
+
+.slider-container{
+  position: relative;
+  overflow: hidden;
+
+}
+.mobileImg{
+  width: 90%;
+
+}
+.slider.mobile{
+  position: absolute; 
+  top: -230px;
+  left:0;
+  transition: all 1s ease-in-out;
+}
+.slider.web{
+  position: absolute; 
+  top: -1000px;
+  left:0;
+  transition: all 1s ease-in-out;
+
+}
+
+.slider.web3{
+  position: absolute; 
+  top: -1650px;
+  left:0;
+  transition: all 1s ease-in-out;
+
+}
+
+
+
+.indector.mobile{
+  margin-top: 0.5rem;
+  position: absolute;
+ top: 86%;
+  left: 9.5%;
+  transition: all 1s ease;
+}
+
+.indector.web{
+  margin-top: 0.5rem;
+  position: absolute;
+ top: 86%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 1s ease;
+}
+
+.indector.web3{
+  margin-top: 0.5rem;
+  position: absolute;
+  top: 86%;
+  left: 85%;
+  transition: all 1s ease;
+}
+
+
+
+
+/* livaat Community */
+
+
+
+
+ #numberOfusers {
+  border: none !important;
+  background: linear-gradient(255.54deg, #D11775 8.36%, #806FBA 53.82%, #5073CD 92.28%);
+  box-shadow: 0px 0px 2px #806FBA, inset -2px 2px 10px #DB388A, inset 2px 0px 5px #24265C, inset 0px 2px 2px #7B2852;
+  border-radius: 17.5px;
+  width: 4rem;
+  height: 2.188rem;
+}
+
+#numberOfusers span {
+  font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: white;
+
+}
+
+.p-avatar{
+  width: 2.188rem;
+  height:2.188rem ;
+
+}
+
+.subtitleLivaatCommunity{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #806FBA;
+  margin-top: 1rem;
+
+
+}
+
+.p-avatar-group{
+justify-content: center;
+margin-top: .8rem;
+}
+
+
+/* livaat blog section */
+.blog-card{
+  background: #FFFFFF;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+.blog-badge{
+background: #6C5D9E;
+border-radius: 5px;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+padding: .2rem;
+color: #FFFFFF;
+}
+.readMore{
+color: #8473BC;
+
+}
+
+.imgContainer{
+  width: 100%;
+  height: 100%;
+}
+
+.BlogPosts::-webkit-scrollbar{
+  height: 10px;
+
+}
+
+/* Track */
+.BlogPosts::-webkit-scrollbar-track {
+  background: #F5F5F5;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  }
+ 
+/* Handle */
+.BlogPosts::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: linear-gradient(121.58deg, #D11775 13.35%, #806FBA 55.58%, #5073CD 91.31%);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25), inset -5px 5px 7px #fffeff, inset 5px 0px 5px #FFFFFF, inset 0px 5px 5px #FFFFFF;
+  border-radius: 15px;
+
+}
+
+
+/* SubScripNewsletter*/
+.buttonShadow{
+  background: #D11775;
+  box-shadow: 0px 0px 3px #D11775, inset -5px 30px 40px #DB388A, inset 30px 0px 20px #FFFFFF, inset 0px 31px 30px #FFFFFF;
+  border-radius: 8px;
+  border: none;
+
+
+}
+
+.inputNewsletter{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+width: 100%;
+}
+
+.inputNewsletter::placeholder{
+color: #3d3d49;
+}
+
+
+
+/*livvat services */
+
+.arrow{
+  display: flex;
+  align-items: center;
+  max-width: 180px;
+  margin-left: auto;
+  
+}
+.outSpan{
+  opacity: 1;
+  transition: all ease-in-out .4s;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  white-space: nowrap;
+  color: #3D3D49;
+  margin-left: 50px;
+}
+
+
+.arrowButton{
+  color: white;
+  background: #D11775;
+  box-shadow: 0px 0px 2px #D11775, inset -2px 10px 10px #DB388A, inset 10px 0px 5px #E4E4E4, inset 0px 31px 30px #D6CECE;
+  border-radius: 20px;
+  padding: 0.5rem 0.6rem ;
+  gap: .8rem;
+  font-weight: 700;
+  font-size: 10px;
+  overflow: hidden;
+  transition:all  .4s linear;
+max-width:40px;
+display: flex;
+align-items: center;
+}
+
+
+#icon{
+  width: 20px;
+  height: 25px;
+  margin-left: 4px;
+}
+
+
+.arrowButton span{
+  font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+padding-left: 2px;
+white-space: nowrap;
+
+}
+.arrow:hover .arrowButton{
+  max-width: 200px;
+}
+.arrow:hover > .outSpan {
+opacity: 0;
+}
+
+
+
+/* learning animation */
+.learning ,.consulting ,.events{
+  position: relative;
+}
+.book  {
+  position: absolute;
+  right: 20px;
+  bottom: -50px;
+  animation:  up-and-down ease-in 3s 1ms infinite ;
+
+}
+
+@keyframes  up-and-down {
+
+  0% {bottom: -50px;}
+  50% {bottom: -35px;}
+  100% {bottom: -50px;}
+}
+
+.learningC  {
+  position: absolute;
+  left: -40px;
+  top: 5px;
+  animation: learningC ease-in 3s 1ms infinite ;
+
+}
+
+@keyframes  learningC {
+
+  0% {top: -30px;}
+  50% {top: 5px;}
+  100% {top: -30px;}
+}
+.learning .smallC{
+  position: absolute;
+top:  120px;
+left: -35px;
+animation:  smallC ease-in 3s 1ms infinite ;
+}
+
+@keyframes  smallC {
+  0% {left: -35px;}
+  50% {left: -25px;}
+  100% {left: -35px;}
+}
+.learning .bigC{
+  position: absolute;
+  bottom:  40px;
+  right: 0px;
+  animation: bigC   ease-in 3s 1ms infinite ;
+}
+
+@keyframes  bigC {
+  0% {right: -10px;}
+  50% {right: 0px;}
+  100% {right: -10px;}
+}
+
+.learning .smallStar{
+  position: absolute;
+  bottom:  -30px;
+  left: 30px;
+  animation: smallStar   ease-in 3s  1ms infinite ;
+
+}
+
+@keyframes  smallStar {
+  0% {transform: rotate(0deg) ;}
+  50% {transform: rotate(90deg) ;}
+  100% {transform: rotate(0deg) ;}
+}
+
+
+.learning .bigStar{
+  position: absolute;
+  top:  -50px;
+  left: 60px;
+  animation: bigStar   ease-in 3s 1ms infinite ;
+
+
+}
+
+@keyframes  bigStar {
+  0% {transform: rotate(0deg) ;}
+  50% {transform: rotate(180deg) ;}
+  100% {transform: rotate(0deg) ;}
+}
+
+/* consulting animation */
+
+
+.calculating {
+  position: absolute;
+  right: 25px;
+  bottom: -60px;
+  animation:  calculating ease-in 3s 1ms infinite ;
+
+}
+
+@keyframes  calculating {
+
+  0% {bottom: -60px;}
+  50% {bottom: -50px;}
+  100% {bottom: -60px;}
+}
+
+
+.drug{
+  position: absolute;
+  left: -22px;
+  top: 5px;
+  animation:  drug ease-in 3s 1ms infinite ;
+}
+
+@keyframes  drug {
+  0% {top: 5px;}
+  50% {top: 20px;}
+  100% {top: 5px;}
+} 
+
+.consulting .smallC{
+  position: absolute;
+  top:  -20px;
+  left: 80px;
+  animation:  consulting-smallC  ease-in 3s 1ms infinite ;
+}
+
+@keyframes  consulting-smallC {
+  0% {  top:  -20px;}
+  50% {  top:  -8px;}
+  100% {  top:  -20px;}
+}
+
+.consulting .bigC{
+  position: absolute;
+  bottom:  -50px;
+  left: 70px;
+  animation:   consulting-bigC ease-in 3s 1ms infinite  ;
+
+}
+
+@keyframes  consulting-bigC {
+  0% {bottom:  -40px;}
+  50% { bottom:  -50px;}
+  100% { bottom:  -40px;}
+}
+
+.consulting .bigStar{
+  position: absolute;
+  bottom:  70px;
+  left: -70px;
+  animation:   consulting-bigStar ease-in 3s 1ms infinite  ;
+
+}
+
+@keyframes  consulting-bigStar {
+  0% {transform: rotate(0deg) ;}
+  50% {transform: rotate(180deg) ;}
+  100% {transform: rotate(0deg) ;}
+}
+.consulting .bigStar{
+  position: absolute;
+  bottom:  70px;
+  left: -70px;
+  animation:   consulting-bigStar ease-in 3s 1ms infinite  ;
+
+}
+
+@keyframes  consulting-bigStar {
+  0% {transform: rotate(0deg) ;}
+  50% {transform: rotate(180deg) ;}
+  100% {transform: rotate(0deg) ;}
+}
+
+.consulting .smallStar{
+  position: absolute;
+  bottom:  0px;
+  right: -30px;
+  animation:   consulting-smallStar ease-in 3s 1ms infinite  ;
+
+
+}
+
+@keyframes  consulting-smallStar {
+  0% {transform: rotate(0deg) ;}
+  50% {transform: rotate(180deg) ;}
+  100% {transform: rotate(0deg) ;}
+}
+
+
+/*events animation */
+
+
+.music{
+  position: absolute;
+  right: 15px;
+  bottom: -60px;
+  animation:   up-and-down-music ease-in 3s 1ms infinite ;
+}
+@keyframes  up-and-down-music {
+
+  0% {bottom: -60px;}
+  50% {bottom: -45px;}
+  100% {bottom: -60px;}
+}
+
+
+
+.todo{
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  animation:  todo ease-in 3s 1ms infinite ;
+}
+
+@keyframes  todo {
+  0% {top: 20px;}
+  50% {top: 35px;}
+  100% {top: 20px;}
+}
+
+.events .smallC{
+  position: absolute;
+  left: 50px;
+  animation:  consulting-smallC  ease-in 3s 1ms infinite ;
+}
+
+@keyframes  consulting-smallC {
+  0% {  top:  -5px;}
+  50% {  top:  -30px;}
+  100% {  top:  -5px;}
+}
+
+.events .bigC{
+  position: absolute;
+  bottom:  -35px;
+  left: 105px;
+  animation:   events-bigC ease-in 3s 1ms infinite  ;
+
+
+}
+
+@keyframes  events-bigC {
+  0% {bottom: -35px;}
+  50% {bottom: -20px;}
+  100% {bottom: -35px;}
+}
+
+.events .bigStar{
+  position: absolute;
+  bottom:  0px;
+  left: -30px;
+  animation:   events-bigStar ease-in 3s 1ms infinite  ;
+
+
+}
+
+@keyframes  events-bigStar {
+  0% {transform: rotate(45deg) ;}
+  50% {transform: rotate(180deg) ;}
+  100% {transform: rotate(45deg) ;}
+}
+
+
+.events .smallStar{
+  position: absolute;
+  bottom:  70px;
+  right: -20px;
+  animation:   events-smallStar ease-in 3s 1ms infinite  ;
+
+
+}
+
+@keyframes  events-smallStar {
+  0% {transform: rotate(0deg) ;}
+  50% {transform: rotate(180deg) ;}
+  100% {transform: rotate(0deg) ;}
+}
+
+
+
+
+
+

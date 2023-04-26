@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.greyC {
+  color: #3d3d49;
+}
+
+.about {
+  background-image: url("../../../assets/bgAbout.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+/*all-in-one platform*/
+
+.allinonesubtitle {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.allinonepragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.heroaboutcontainer {
+  background: url(../../../assets/heroAbout.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -8rem;
+}
