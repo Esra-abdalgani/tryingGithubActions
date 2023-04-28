@@ -16,7 +16,7 @@ function Hero() {
              EXPERIENCE<span className="text-magentaColor"> REDEFINED</span>
           </h1>
           <p className="text-base tex-black">
-            Watch, create, learn and much more; all through one platform to
+             create, learn and much more; all through one platform to
             fulfill your needs in various industries and serve your business
             virtually where the whole world is watching.
           </p>
