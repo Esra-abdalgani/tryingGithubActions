@@ -13,10 +13,10 @@ function Hero() {
       <div className=" flex flex-col-reverse items-center pt-52 mt-10 space-y-0 md:space-y-0 md:flex-row ">
         <div className="flex flex-col mb-32  space-y-12 md:max-w-md">
           <h1 className="text-arseniColor font-bold text-4xl	">
-            LIVE EXPERIENCE<span className="text-magentaColor"> REDEFINED</span>
+           EXPERIENCE<span className="text-magentaColor"> REDEFINED</span>
           </h1>
           <p className="text-base tex-black">
-            Watch, create, learn and much more; all through one platform to
+            create, learn and much more; all through one platform to
             fulfill your needs in various industries and serve your business
             virtually where the whole world is watching.
           </p>

@@ -9,7 +9,10 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "aws s3 sync dist/ s3://tryingdeploylivaatesraa",
+    "prod": "npm run build && npm run deploy"
+    
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
