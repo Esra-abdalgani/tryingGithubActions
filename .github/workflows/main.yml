@@ -1,7 +1,5 @@
 name: s3-depl
-on:
-  push:
-    branches: [ master ]
+on: issues
 jobs:
       build:
         runs-on: ubuntu-latest
